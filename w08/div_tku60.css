@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-size: 16px;
+}
+
+#container {
+  width: 90%;
+  border: 2px solid purple;
+  margin: 20px auto;
+}
+
+#heading {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 6fr 6fr;
+  grid-template-areas: 'heading heading' 'list1 list2';
+  width: 100%;
+  height: 100px;
+  background-color: darkcyan;
+  text-align: center;
+}
+
+#HeadingText {
+  grid-area: heading;
+}
+
+#list1 {
+  grid-area: list1;
+}
+
+#list1 ul {
+  display: flex;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+#list1 li {
+  list-style-type: none;
+  padding: 0px 5px 10px 5px;
+  font-size: 0.9 rem;
+}
+
+#list1 ul a {
+  background-color: darksalmon;
+  padding: 5px;
+}
+
+#list1 ul a:hover {
+  background-color: crimson;
+}
+
+#list2 {
+  grid-area: list2;
+  margin-left: 30%;
+}
+
+#list2 ul {
+  display: flex;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+#list2 li {
+  list-style-type: none;
+  padding: 0px 5px 10px 5px;
+  font-size: 0.9 rem;
+}
+
+#list2 ul a {
+  background-color: darksalmon;
+  padding: 5px;
+}
+
+#list2 ul a:hover {
+  background-color: crimson;
+}
+
+#main {
+  display: flex;
+  background-color: darkturquoise;
+}
+
+#main ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#main li {
+  list-style-type: none;
+  text-align: center;
+  margin: 7px;
+  font-size: 0.8rem;
+}
+
+#main ul a {
+  background-color: salmon;
+  padding: 5px;
+}
+
+#main ul a:hover {
+  background-color: crimson;
+}
+
+aside {
+  width: 20%;
+  height: 100%;
+  background-color: darkturquoise;
+}
+
+#section {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(152, 230, 230);
+  padding: 10px;
+}
+
+#footer {
+  width: 100%;
+  height: 70px;
+  background-color: darkgray;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
