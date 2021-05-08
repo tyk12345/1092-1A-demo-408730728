@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+  }
+  #container {
+    border: 25px black;
+  }
+  
+  table {
+    margin: 0rem auto;
+  }
+  
+  #left {
+    background-color: lightblue;
+  }
+  
+  #right {
+    background-color: lightpink;
+
+  }
+  #image{
+      background-color:white;
+  }
+  
