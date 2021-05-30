@@ -262,7 +262,7 @@ ul {
     }*/
 }
 
-.detail2.show .items {
+.detail2.show .items, .detail2.show .more1link, .detail2.show .more2link, .detail2.show .more3link, .detail2.show .more4link, .detail2.show .more5link, .detail2.show .more6link {
   padding: 0.8rem 1.3rem 0.8rem 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,12 +273,8 @@ ul {
   margin: 0.2rem;
 }
 
-.detail2.show .detail2_hr {
-  color: yellow;
-}
-
-.detail2.show .detail2_bottom_hr {
-  color: black;
+.detail2.show .more1link:hover, .detail2.show .more2link:hover, .detail2.show .more3link:hover, .detail2.show .more4link:hover, .detail2.show .more5link:hover, .detail2.show .more6link:hover {
+  cursor: pointer;
 }
 
 .detail2.show .more1_contents, .detail2.show .more2_contents, .detail2.show .more3_contents, .detail2.show .more4_contents, .detail2.show .more5_contents, .detail2.show .more6_contents {
@@ -365,9 +361,9 @@ header img {
   font-size: 1.2rem;
 }
 
-.titles {
-  margin-left: 5rem;
-  margin-right: 5rem;
+.titles1 {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1rem;
   font-weight: 450;
   display: -webkit-box;
@@ -383,8 +379,24 @@ header img {
   padding-bottom: 2rem;
 }
 
-.titles .texts:hover {
+.titles1 .texts:hover {
   text-decoration: underline;
+}
+
+.titles1 .right {
+  width: 5%;
+}
+
+.titles1 .left {
+  width: 5%;
+}
+
+.titles1 p {
+  text-align: center;
+}
+
+.titles2 {
+  display: none;
 }
 
 .icons {
@@ -672,6 +684,12 @@ header img {
 }
 
 @media (max-width: 830px) {
+  .titles2 {
+    display: none;
+  }
+  .container {
+    width: 95%;
+  }
   .main_nav1 {
     display: none;
   }
@@ -776,6 +794,41 @@ header img {
 }
 
 @media (max-width: 780px) {
+  .titles1 {
+    display: none;
+  }
+  .titles2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 450;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2rem;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .titles2 .texts:hover {
+    text-decoration: underline;
+  }
+  .titles2 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+  }
+  .titles2 .icons {
+    padding-right: 0.5rem;
+  }
   .btn {
     font-size: 1rem;
     padding: 0.6rem 0.9rem;
